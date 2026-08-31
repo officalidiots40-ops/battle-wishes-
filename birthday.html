@@ -1,0 +1,2738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sangram ❤️</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --pink:#ff4fa3;
+  --pink2:#ff8dc7;
+  --purple:#a564ff;
+  --gold:#ffd76a;
+  --bg:#07020c;
+  --card:rgba(255,255,255,.055);
+  --border:rgba(255,120,190,.22)
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  color:#fff;
+  background:
+    radial-gradient(circle at 20% 15%,rgba(255,45,145,.16),transparent 30%),
+    radial-gradient(circle at 85% 20%,rgba(155,78,255,.14),transparent 32%),
+    var(--bg);
+  overflow-x:hidden;
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 100%,rgba(255,0,120,.12),transparent 40%);
+  z-index:-3;
+}
+
+/* =========================
+   STARS
+========================= */
+
+#stars{
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+}
+
+.star{
+  position:absolute;
+  width:2px;
+  height:2px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 0 8px #fff;
+  animation:twinkle 1.8s infinite alternate;
+}
+
+@keyframes twinkle{
+  from{opacity:.15;transform:scale(.6)}
+  to{opacity:1;transform:scale(1.5)}
+}
+
+/* =========================
+   FIREWORKS
+========================= */
+
+#fireworks{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  z-index:10000;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  padding:70px 20px;
+  position:relative;
+}
+
+.hero-grid{
+  width:min(1120px,100%);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.pre{
+  color:var(--pink2);
+  letter-spacing:7px;
+  text-transform:uppercase;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:clamp(60px,9vw,120px);
+  line-height:.84;
+  font-style:italic;
+  background:
+    linear-gradient(
+      120deg,
+      #fff,
+      var(--pink2),
+      var(--pink),
+      #fff
+    );
+  background-size:300%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:shine 5s linear infinite;
+}
+
+@keyframes shine{
+  to{background-position:300%}
+}
+
+.name{
+  margin-top:24px;
+  font-size:clamp(38px,6vw,72px);
+  letter-spacing:6px;
+  color:var(--gold);
+  text-shadow:
+    0 0 14px rgba(255,215,106,.45),
+    0 0 35px rgba(255,60,150,.22);
+}
+
+.rule{
+  width:250px;
+  height:2px;
+  margin:25px 0;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--pink),
+      transparent
+    );
+}
+
+.subtitle{
+  color:#ffd0e6;
+  font-size:22px;
+  font-style:italic;
+  margin-bottom:16px;
+}
+
+.desc{
+  max-width:560px;
+  color:#cfc3d0;
+  line-height:1.9;
+  font-size:18px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-top:28px;
+  padding:14px 25px;
+  border:0;
+  border-radius:999px;
+  color:white;
+  background:
+    linear-gradient(
+      90deg,
+      #ff2f83,
+      #9748ff
+    );
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:
+    0 12px 35px
+    rgba(255,40,145,.28);
+  transition:.25s;
+  text-decoration:none;
+}
+
+.btn:hover{
+  transform:
+    translateY(-4px)
+    scale(1.03);
+  box-shadow:
+    0 18px 45px
+    rgba(255,50,150,.45);
+}
+
+/* =========================
+   HERO COLLAGE
+========================= */
+
+.collage{
+  position:relative;
+  min-height:560px;
+}
+
+.frame{
+  position:absolute;
+  background:#fff;
+  padding:10px 10px 38px;
+  box-shadow:
+    0 25px 55px
+    rgba(0,0,0,.55);
+  transition:.55s;
+}
+
+.frame img{
+  display:block;
+  width:100%;
+  height:335px;
+  object-fit:cover;
+}
+
+.frame:hover{
+  transform:
+    rotate(0deg)
+    scale(1.05)!important;
+  z-index:20;
+}
+
+.f1{
+  width:260px;
+  left:10px;
+  top:10px;
+  transform:rotate(-7deg);
+}
+
+.f2{
+  width:245px;
+  right:0;
+  top:60px;
+  transform:rotate(7deg);
+}
+
+.f3{
+  width:240px;
+  left:55px;
+  bottom:10px;
+  transform:rotate(5deg);
+}
+
+.f4{
+  width:245px;
+  right:10px;
+  bottom:25px;
+  transform:rotate(-5deg);
+}
+
+.center-heart{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:52px;
+  z-index:30;
+  filter:
+    drop-shadow(
+      0 0 20px
+      var(--pink)
+    );
+  animation:heartbeat 1s infinite;
+}
+
+@keyframes heartbeat{
+
+  0%,100%{
+    transform:
+      translate(-50%,-50%)
+      scale(1);
+  }
+
+  25%{
+    transform:
+      translate(-50%,-50%)
+      scale(1.17);
+  }
+
+  45%{
+    transform:
+      translate(-50%,-50%)
+      scale(1);
+  }
+}
+
+/* =========================
+   MUSIC PLAYER
+========================= */
+
+.music-wrap{
+  width:min(1050px,calc(100% - 30px));
+  margin:0 auto 18px;
+  padding:24px;
+  border:
+    1px solid
+    var(--border);
+  border-radius:25px;
+  background:var(--card);
+  backdrop-filter:blur(14px);
+  display:flex;
+  gap:20px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.disc{
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  background:
+    radial-gradient(
+      circle,
+      #ff4f9e 0 15%,
+      #160a19 16% 35%,
+      #444 36% 38%,
+      #111 39%
+    );
+  box-shadow:
+    0 0 28px
+    rgba(255,60,155,.4);
+  animation:spin 4s linear infinite;
+  animation-play-state:paused;
+  flex:0 0 auto;
+}
+
+.disc.playing{
+  animation-play-state:running;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+.music-info{
+  flex:1;
+  min-width:220px;
+}
+
+.music-title{
+  font-size:22px;
+  color:var(--pink2);
+  margin-bottom:6px;
+}
+
+.music-info small{
+  color:#9f95a3;
+}
+
+.music-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.round{
+  width:56px;
+  height:56px;
+  border:0;
+  border-radius:50%;
+  background:
+    linear-gradient(
+      135deg,
+      #ff3c91,
+      #a43aff
+    );
+  color:#fff;
+  font-weight:700;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.secondary{
+  padding:0 16px;
+  border-radius:999px;
+  border:
+    1px solid
+    rgba(255,100,180,.22);
+  background:
+    rgba(255,255,255,.08);
+  font-size:14px;
+}
+
+.track-note{
+  text-align:center;
+  color:#7e7481;
+  font-size:12px;
+  margin:0 auto 25px;
+}
+
+/* =========================
+   SONG PHOTO SLIDESHOW
+========================= */
+
+.song-slider{
+  width:min(920px,calc(100% - 30px));
+  margin:0 auto 70px;
+  padding:20px;
+  border:
+    1px solid
+    rgba(255,100,180,.22);
+  border-radius:28px;
+  background:
+    rgba(255,255,255,.045);
+  backdrop-filter:blur(15px);
+  box-shadow:
+    0 20px 70px
+    rgba(0,0,0,.35);
+}
+
+.song-slider-title{
+  text-align:center;
+  color:#ff8dc7;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.slider-window{
+  position:relative;
+  width:100%;
+  height:390px;
+  overflow:hidden;
+  border-radius:22px;
+  background:#100711;
+}
+
+.song-photo{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transform:scale(1.08);
+  transition:
+    opacity .9s ease,
+    transform 4s ease;
+}
+
+.song-photo.active{
+  opacity:1;
+  transform:scale(1);
+}
+
+.song-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.song-photo:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      to top,
+      rgba(4,0,8,.45),
+      transparent 50%
+    );
+}
+
+.slider-heart{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:20;
+  transform:
+    translate(-50%,-50%);
+  font-size:62px;
+  filter:
+    drop-shadow(
+      0 0 20px
+      rgba(255,50,155,.7)
+    );
+  pointer-events:none;
+}
+
+.slider-heart.beat{
+  animation:
+    sliderBeat .8s ease;
+}
+
+@keyframes sliderBeat{
+
+  0%{
+    transform:
+      translate(-50%,-50%)
+      scale(1);
+  }
+
+  35%{
+    transform:
+      translate(-50%,-50%)
+      scale(1.3);
+  }
+
+  55%{
+    transform:
+      translate(-50%,-50%)
+      scale(.98);
+  }
+
+  75%{
+    transform:
+      translate(-50%,-50%)
+      scale(1.16);
+  }
+
+  100%{
+    transform:
+      translate(-50%,-50%)
+      scale(1);
+  }
+}
+
+.slider-caption{
+  position:absolute;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%);
+  z-index:15;
+  color:#fff;
+  font-size:15px;
+  text-shadow:0 2px 10px #000;
+  white-space:nowrap;
+}
+
+.slider-dots{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  margin-top:16px;
+}
+
+.slider-dot{
+  width:9px;
+  height:9px;
+  padding:0;
+  border:0;
+  border-radius:50%;
+  background:#68536a;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.slider-dot.active{
+  width:25px;
+  border-radius:999px;
+  background:#ff63ad;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  width:min(1100px,100%);
+  margin:auto;
+  padding:95px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.section-title h2{
+  font-size:
+    clamp(
+      38px,
+      6vw,
+      58px
+    );
+  color:var(--pink2);
+  font-style:italic;
+}
+
+.section-title p{
+  color:#9f95a3;
+  margin-top:12px;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message{
+  max-width:850px;
+  margin:auto;
+  padding:42px;
+  border-radius:30px;
+  border:
+    1px solid
+    var(--border);
+  background:var(--card);
+  box-shadow:
+    0 20px 65px
+    rgba(0,0,0,.35);
+  text-align:center;
+}
+
+.message p{
+  font-size:21px;
+  line-height:2;
+  color:#e8dce5;
+  font-style:italic;
+  min-height:145px;
+}
+
+/* =========================
+   AGE
+========================= */
+
+.age-card{
+  max-width:520px;
+  margin:0 auto;
+  padding:35px;
+  text-align:center;
+  border-radius:28px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,60,140,.10),
+      rgba(120,40,255,.08)
+    );
+  border:
+    1px solid
+    var(--border);
+}
+
+.age{
+  font-size:92px;
+  font-weight:700;
+  color:var(--pink2);
+  text-shadow:
+    0 0 30px
+    rgba(255,60,155,.35);
+}
+
+.meta{
+  color:#aaa;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.meta strong{
+  color:#fff;
+}
+
+.countdown{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.time{
+  width:115px;
+  padding:22px 10px;
+  text-align:center;
+  border-radius:18px;
+  background:var(--card);
+  border:
+    1px solid
+    var(--border);
+}
+
+.time strong{
+  display:block;
+  font-size:34px;
+}
+
+.time span{
+  font-size:10px;
+  letter-spacing:2px;
+  color:#8f8692;
+}
+
+/* =========================
+   MEMORY
+========================= */
+
+.memory-grid{
+  display:grid;
+  grid-template-columns:
+    repeat(2,1fr);
+  gap:22px;
+}
+
+.memory{
+  overflow:hidden;
+  min-height:450px;
+  border-radius:24px;
+  border:
+    1px solid
+    rgba(255,255,255,.12);
+  background:#130b18;
+  position:relative;
+}
+
+.memory img{
+  width:100%;
+  height:100%;
+  min-height:450px;
+  object-fit:cover;
+  display:block;
+  transition:.8s;
+}
+
+.memory:hover img{
+  transform:scale(1.05);
+}
+
+.memory:after{
+  content:"❤️";
+  position:absolute;
+  right:16px;
+  bottom:15px;
+  font-size:26px;
+  filter:
+    drop-shadow(
+      0 0 10px
+      var(--pink)
+    );
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+  display:grid;
+  grid-template-columns:
+    repeat(4,1fr);
+  gap:16px;
+}
+
+.card{
+  padding:32px 18px;
+  text-align:center;
+  border-radius:22px;
+  background:var(--card);
+  border:
+    1px solid
+    var(--border);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:
+    0 15px 40px
+    rgba(255,20,130,.13);
+}
+
+.icon{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  color:var(--pink2);
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#aaa;
+  line-height:1.7;
+}
+
+/* =========================
+   CAKE
+========================= */
+
+.cake-wrap{
+  text-align:center;
+}
+
+.cake{
+  position:relative;
+  width:240px;
+  height:165px;
+  margin:65px auto 30px;
+}
+
+.cake-base{
+  position:absolute;
+  bottom:0;
+  width:240px;
+  height:88px;
+  border-radius:
+    16px 16px 25px 25px;
+  background:
+    linear-gradient(
+      #ff77bb,
+      #c61e76
+    );
+  box-shadow:
+    0 20px 50px
+    rgba(255,0,130,.25);
+}
+
+.cake-top{
+  position:absolute;
+  top:35px;
+  width:240px;
+  height:45px;
+  border-radius:50%;
+  background:#ffacd9;
+}
+
+.candle{
+  position:absolute;
+  top:-5px;
+  width:15px;
+  height:60px;
+  border-radius:5px;
+  background:
+    linear-gradient(
+      #fff,
+      #ff5cab
+    );
+}
+
+.c1{left:70px}
+.c2{left:112px}
+.c3{left:154px}
+
+.flame{
+  position:absolute;
+  top:-36px;
+  left:-2px;
+  width:19px;
+  height:27px;
+  background:#ffd83d;
+  border-radius:
+    50% 50% 50% 0;
+  transform:rotate(-45deg);
+  box-shadow:
+    0 0 25px
+    #ff9c00;
+  animation:
+    flame .5s infinite alternate;
+}
+
+.flame.off{
+  display:none;
+}
+
+@keyframes flame{
+  to{
+    transform:
+      rotate(-45deg)
+      scale(1.15);
+  }
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+  text-align:center;
+  padding-bottom:110px;
+}
+
+.final h2{
+  font-size:
+    clamp(
+      40px,
+      7vw,
+      75px
+    );
+  color:var(--pink2);
+  font-style:italic;
+}
+
+.final p{
+  max-width:700px;
+  margin:22px auto;
+  color:#aaa;
+  line-height:1.9;
+  font-size:18px;
+}
+
+.footer{
+  text-align:center;
+  border-top:
+    1px solid
+    rgba(255,255,255,.07);
+  padding:24px;
+  color:#837986;
+}
+
+.footer b{
+  color:var(--pink2);
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart{
+  position:fixed;
+  bottom:-40px;
+  z-index:50;
+  pointer-events:none;
+  animation:
+    heartFloat
+    linear
+    forwards;
+}
+
+@keyframes heartFloat{
+  to{
+    transform:
+      translateY(-115vh)
+      rotate(360deg);
+    opacity:0;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:860px){
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-text{
+    text-align:center;
+  }
+
+  .rule{
+    margin:25px auto;
+  }
+
+  .desc{
+    margin:auto;
+  }
+
+  .collage{
+    max-width:620px;
+    width:100%;
+    margin:auto;
+  }
+
+  .cards{
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+}
+
+@media(max-width:620px){
+
+  .hero{
+    padding:55px 15px;
+  }
+
+  .collage{
+    min-height:535px;
+    transform:scale(.86);
+    margin-top:-10px;
+  }
+
+  .f1,
+  .f2,
+  .f3,
+  .f4{
+    width:200px;
+  }
+
+  .f1{left:0}
+  .f2{right:0}
+  .f3{left:30px}
+  .f4{right:0}
+
+  .frame img{
+    height:260px;
+  }
+
+  .music-wrap{
+    margin-bottom:15px;
+  }
+
+  .music-title{
+    font-size:18px;
+  }
+
+  .memory-grid{
+    grid-template-columns:1fr;
+  }
+
+  .memory,
+  .memory img{
+    min-height:380px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .message{
+    padding:25px 18px;
+  }
+
+  .message p{
+    font-size:18px;
+  }
+
+  .time{
+    width:78px;
+  }
+
+  .time strong{
+    font-size:27px;
+  }
+
+  .slider-window{
+    height:290px;
+  }
+
+  .song-slider{
+    width:calc(100% - 20px);
+    padding:14px;
+  }
+
+  .slider-caption{
+    font-size:13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<div id="stars"></div>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="pre">
+✨ A VERY SPECIAL DAY ✨
+</div>
+
+<h1>
+Happy<br>
+Birthday
+</h1>
+
+<div class="name">
+SANGRAM
+</div>
+
+<div class="rule"></div>
+
+<div class="subtitle">
+You are special, today & always ❤️
+</div>
+
+<p class="desc">
+
+Wishing you a beautiful birthday
+filled with love, happiness,
+laughter and unforgettable memories.
+
+May this new year of your life
+bring you everything your heart
+wishes for. ✨
+
+</p>
+
+<a
+href="#memories"
+class="btn">
+
+Explore The Memories ❤️
+
+</a>
+
+</div>
+
+
+<!-- HERO PHOTOS -->
+
+<div class="collage">
+
+<div class="frame f1">
+<img src="photo1.jpg" alt="Sangram Photo 1">
+</div>
+
+<div class="frame f2">
+<img src="photo2.jpg" alt="Sangram Photo 2">
+</div>
+
+<div class="frame f3">
+<img src="photo3.jpg" alt="Sangram Photo 3">
+</div>
+
+<div class="frame f4">
+<img src="photo4.jpg" alt="Sangram Photo 4">
+</div>
+
+<div class="center-heart" id="centerHeart">
+❤️
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     MUSIC PLAYER
+========================= -->
+
+<div class="music-wrap">
+
+<div
+class="disc"
+id="disc">
+
+🎵
+
+</div>
+
+
+<div class="music-info">
+
+<div class="music-title">
+🎵 Khuda Bhi — Special Song For Sangram ❤️
+</div>
+
+<small>
+Song play hote hi photos automatically slide hongi ✨
+</small>
+
+</div>
+
+
+<div class="music-actions">
+
+<button
+class="round"
+id="musicButton"
+onclick="toggleMusic()">
+
+▶
+
+</button>
+
+<button
+class="round secondary"
+onclick="restartMusic()">
+
+↻
+
+</button>
+
+</div>
+
+</div>
+
+<div class="track-note">
+Playing from local file: <b>khuda.mp3</b>
+</div>
+
+
+<!-- =========================
+     PHOTO SLIDESHOW
+     UNDER SONG
+========================= -->
+
+<div class="song-slider">
+
+<div class="song-slider-title">
+❤️ Memories Playing With The Song ❤️
+</div>
+
+<div class="slider-window">
+
+<div
+class="song-photo active"
+data-index="0">
+
+<img
+src="photo1.jpg"
+alt="Sangram Memory 1">
+
+</div>
+
+
+<div
+class="song-photo"
+data-index="1">
+
+<img
+src="photo2.jpg"
+alt="Sangram Memory 2">
+
+</div>
+
+
+<div
+class="song-photo"
+data-index="2">
+
+<img
+src="photo3.jpg"
+alt="Sangram Memory 3">
+
+</div>
+
+
+<div
+class="song-photo"
+data-index="3">
+
+<img
+src="photo4.jpg"
+alt="Sangram Memory 4">
+
+</div>
+
+
+<div
+class="slider-heart"
+id="sliderHeart">
+
+❤️
+
+</div>
+
+
+<div class="slider-caption">
+Beautiful memories of Sangram ✨
+</div>
+
+</div>
+
+
+<div class="slider-dots">
+
+<button
+class="slider-dot active"
+data-slide="0">
+</button>
+
+<button
+class="slider-dot"
+data-slide="1">
+</button>
+
+<button
+class="slider-dot"
+data-slide="2">
+</button>
+
+<button
+class="slider-dot"
+data-slide="3">
+</button>
+
+</div>
+
+</div>
+
+
+<!-- LOCAL SONG -->
+
+<audio
+id="music"
+preload="metadata">
+
+<source
+src="khuda.mp3"
+type="audio/mpeg">
+
+</audio>
+
+
+<!-- =========================
+     MESSAGE
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+A Small Message For You ❤️
+</h2>
+
+<p>
+Because some feelings deserve beautiful words.
+</p>
+
+</div>
+
+
+<div class="message">
+
+<p id="typing"></p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     AGE
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+Your Special Year ✨
+</h2>
+
+<p>
+A new chapter begins...
+</p>
+
+</div>
+
+
+<div class="age-card">
+
+<div class="age">
+18
+</div>
+
+<div class="meta">
+
+Born on
+<strong>
+24 September 2007
+</strong>
+
+<br><br>
+
+Turning
+<strong>
+19
+</strong>
+on
+<strong>
+24 September 2026
+</strong>
+
+🎂
+
+</div>
+
+</div>
+
+
+<div class="countdown">
+
+<div class="time">
+<strong id="days">00</strong>
+<span>DAYS</span>
+</div>
+
+<div class="time">
+<strong id="hours">00</strong>
+<span>HOURS</span>
+</div>
+
+<div class="time">
+<strong id="minutes">00</strong>
+<span>MINUTES</span>
+</div>
+
+<div class="time">
+<strong id="seconds">00</strong>
+<span>SECONDS</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MEMORIES
+========================= -->
+
+<section id="memories">
+
+<div class="section-title">
+
+<h2>
+Beautiful Memories 📸
+</h2>
+
+<p>
+Four moments, countless memories.
+</p>
+
+</div>
+
+
+<div class="memory-grid">
+
+<div class="memory">
+<img src="photo1.jpg" alt="Sangram Memory 1">
+</div>
+
+<div class="memory">
+<img src="photo2.jpg" alt="Sangram Memory 2">
+</div>
+
+<div class="memory">
+<img src="photo3.jpg" alt="Sangram Memory 3">
+</div>
+
+<div class="memory">
+<img src="photo4.jpg" alt="Sangram Memory 4">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SPECIAL CARDS
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+For You, Sangram ❤️
+</h2>
+
+<p>
+A few little wishes from the heart.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">
+🎂
+</div>
+
+<h3>
+Make A Wish
+</h3>
+
+<p>
+Close your eyes,
+make a wish and
+believe it will come true.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+❤️
+</div>
+
+<h3>
+Lots Of Love
+</h3>
+
+<p>
+May your life always
+be surrounded by
+love and happiness.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+🎁
+</div>
+
+<h3>
+Special Day
+</h3>
+
+<p>
+Today is all about
+celebrating you
+and your beautiful journey.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+⭐
+</div>
+
+<h3>
+Keep Shining
+</h3>
+
+<p>
+Keep following your
+dreams and never stop
+believing in yourself.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CAKE
+========================= -->
+
+<section class="cake-wrap">
+
+<div class="section-title">
+
+<h2>
+Make A Wish 🎂
+</h2>
+
+<p>
+It's your moment, Sangram.
+</p>
+
+</div>
+
+
+<div class="cake">
+
+<div class="cake-base"></div>
+
+<div class="cake-top"></div>
+
+<div class="candle c1">
+<div class="flame"></div>
+</div>
+
+<div class="candle c2">
+<div class="flame"></div>
+</div>
+
+<div class="candle c3">
+<div class="flame"></div>
+</div>
+
+</div>
+
+
+<button
+class="btn"
+onclick="makeWish()">
+
+🎆 MAKE A WISH 🎆
+
+</button>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+<div class="section-title">
+
+<h2>
+Keep Smiling,<br>
+Keep Shining ❤️
+</h2>
+
+</div>
+
+<p>
+
+May every morning bring you
+a reason to smile, every night
+bring you peace, and every dream
+slowly become reality.
+
+Stay happy,
+stay blessed,
+and stay exactly
+the wonderful person you are.
+
+</p>
+
+
+<button
+class="btn"
+onclick="celebrate()">
+
+🎉 CELEBRATE SANGRAM 🎉
+
+</button>
+
+</section>
+
+
+<footer class="footer">
+
+Made with
+<b>❤️</b>
+for
+<strong>Sangram</strong>
+
+<br><br>
+
+May all your dreams come true! ✨
+
+</footer>
+
+
+<script>
+
+/* =========================
+   STARS
+========================= */
+
+const stars =
+document.getElementById("stars");
+
+for(
+  let i=0;
+  i<170;
+  i++
+){
+
+  const star =
+  document.createElement("div");
+
+  star.className="star";
+
+  star.style.left =
+    Math.random()*100+"%";
+
+  star.style.top =
+    Math.random()*100+"%";
+
+  star.style.animationDelay =
+    Math.random()*3+"s";
+
+  stars.appendChild(star);
+}
+
+
+/* =========================
+   TYPING MESSAGE
+========================= */
+
+const message =
+"Happy Birthday, Sangram! ❤️ On your special day, I just want to remind you how amazing you are. Your smile, your heart and all the little things that make you who you are deserve to be celebrated. May you always have reasons to smile, people who truly care about you, and dreams that keep you excited about tomorrow. Stay happy, stay blessed and keep shining like the star you are! ✨";
+
+const typing =
+document.getElementById("typing");
+
+let typed = 0;
+
+function typeMessage(){
+
+  if(
+    typed < message.length
+  ){
+
+    typing.innerHTML =
+      message.slice(
+        0,
+        typed + 1
+      )
+      +
+      '<span style="color:#ff65b0">|</span>';
+
+    typed++;
+
+    setTimeout(
+      typeMessage,
+      28
+    );
+  }
+}
+
+setTimeout(
+  typeMessage,
+  900
+);
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+function createHeart(){
+
+  const h =
+  document.createElement("div");
+
+  h.className="heart";
+
+  const icons = [
+    "❤️",
+    "💖",
+    "💕",
+    "💗",
+    "💓",
+    "💘"
+  ];
+
+  h.textContent =
+    icons[
+      Math.floor(
+        Math.random()*
+        icons.length
+      )
+    ];
+
+  h.style.left =
+    Math.random()*100+"vw";
+
+  h.style.fontSize =
+    16+
+    Math.random()*20+
+    "px";
+
+  h.style.animationDuration =
+    5+
+    Math.random()*5+
+    "s";
+
+  document.body.appendChild(h);
+
+  setTimeout(
+    ()=>h.remove(),
+    11000
+  );
+}
+
+setInterval(
+  createHeart,
+  900
+);
+
+
+/* =========================
+   MUSIC
+========================= */
+
+const music =
+document.getElementById("music");
+
+const musicButton =
+document.getElementById("musicButton");
+
+const disc =
+document.getElementById("disc");
+
+let musicPlaying=false;
+
+
+function syncMusicUI(){
+
+  musicPlaying =
+    !music.paused;
+
+  musicButton.textContent =
+    musicPlaying
+      ? "❚❚"
+      : "▶";
+
+  disc.classList.toggle(
+    "playing",
+    musicPlaying
+  );
+
+  if(
+    musicPlaying
+  ){
+
+    startPhotoSlideshow();
+
+  }else{
+
+    stopPhotoSlideshow();
+
+  }
+}
+
+
+music.addEventListener(
+  "play",
+  syncMusicUI
+);
+
+music.addEventListener(
+  "pause",
+  syncMusicUI
+);
+
+
+music.addEventListener(
+  "ended",
+  ()=>{
+
+    stopPhotoSlideshow();
+
+    musicButton.textContent =
+      "▶";
+
+    disc.classList.remove(
+      "playing"
+    );
+  }
+);
+
+
+function toggleMusic(){
+
+  if(
+    music.paused
+  ){
+
+    music.play()
+    .catch(()=>{
+
+      alert(
+        "Song nahi mil raha.\n\n"+
+        "Check karo ki khuda.mp3 "+
+        "isi folder mein hai."
+      );
+
+    });
+
+  }else{
+
+    music.pause();
+  }
+}
+
+
+function restartMusic(){
+
+  music.currentTime=0;
+
+  music.play()
+  .catch(()=>{
+
+    alert(
+      "Song nahi mil raha.\n\n"+
+      "Check karo ki khuda.mp3 "+
+      "isi folder mein hai."
+    );
+
+  });
+}
+
+
+/* =========================
+   PHOTO SLIDESHOW
+========================= */
+
+const slides =
+[
+  ...document.querySelectorAll(
+    ".song-photo"
+  )
+];
+
+const dots =
+[
+  ...document.querySelectorAll(
+    ".slider-dot"
+  )
+];
+
+const sliderHeart =
+document.getElementById(
+  "sliderHeart"
+);
+
+let slideIndex=0;
+
+let slideTimer=null;
+
+
+function showSlide(index){
+
+  slideIndex =
+    (index+slides.length)
+    %slides.length;
+
+
+  slides.forEach(
+    (slide,i)=>{
+
+      slide.classList.toggle(
+        "active",
+        i===slideIndex
+      );
+
+    }
+  );
+
+
+  dots.forEach(
+    (dot,i)=>{
+
+      dot.classList.toggle(
+        "active",
+        i===slideIndex
+      );
+
+    }
+  );
+
+
+  /* BIG HEART BEAT */
+
+  sliderHeart.classList.remove(
+    "beat"
+  );
+
+  void sliderHeart.offsetWidth;
+
+  sliderHeart.classList.add(
+    "beat"
+  );
+}
+
+
+function startPhotoSlideshow(){
+
+  if(
+    slideTimer
+  ){
+    return;
+  }
+
+
+  showSlide(slideIndex);
+
+
+  slideTimer =
+    setInterval(
+      ()=>{
+
+        showSlide(
+          slideIndex+1
+        );
+
+      },
+      3300
+    );
+}
+
+
+function stopPhotoSlideshow(){
+
+  clearInterval(
+    slideTimer
+  );
+
+  slideTimer=null;
+}
+
+
+dots.forEach(
+  dot=>{
+
+    dot.addEventListener(
+      "click",
+      ()=>{
+
+        showSlide(
+          Number(
+            dot.dataset.slide
+          )
+        );
+
+      }
+    );
+
+  }
+);
+
+
+/* =========================
+   HEARTBEAT WHEN SONG PLAYS
+========================= */
+
+const centerHeart =
+document.getElementById(
+  "centerHeart"
+);
+
+
+music.addEventListener(
+  "play",
+  ()=>{
+
+    centerHeart.style.animationDuration =
+      ".72s";
+
+  }
+);
+
+
+music.addEventListener(
+  "pause",
+  ()=>{
+
+    centerHeart.style.animationDuration =
+      "1s";
+
+  }
+);
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+const birthMonth = 8;
+const birthDay = 24;
+
+function updateCountdown(){
+
+  const now =
+    new Date();
+
+  let year =
+    now.getFullYear();
+
+
+  let next =
+    new Date(
+      year,
+      birthMonth,
+      birthDay,
+      0,
+      0,
+      0
+    );
+
+
+  if(
+    next <= now
+  ){
+
+    next =
+      new Date(
+        year+1,
+        birthMonth,
+        birthDay,
+        0,
+        0,
+        0
+      );
+  }
+
+
+  const diff =
+    next-now;
+
+
+  const d =
+    Math.floor(
+      diff/86400000
+    );
+
+
+  const h =
+    Math.floor(
+      diff/3600000
+    )%24;
+
+
+  const m =
+    Math.floor(
+      diff/60000
+    )%60;
+
+
+  const s =
+    Math.floor(
+      diff/1000
+    )%60;
+
+
+  document.getElementById(
+    "days"
+  ).textContent =
+    String(d).padStart(
+      2,
+      "0"
+    );
+
+
+  document.getElementById(
+    "hours"
+  ).textContent =
+    String(h).padStart(
+      2,
+      "0"
+    );
+
+
+  document.getElementById(
+    "minutes"
+  ).textContent =
+    String(m).padStart(
+      2,
+      "0"
+    );
+
+
+  document.getElementById(
+    "seconds"
+  ).textContent =
+    String(s).padStart(
+      2,
+      "0"
+    );
+}
+
+updateCountdown();
+
+setInterval(
+  updateCountdown,
+  1000
+);
+
+
+/* =========================
+   FIREWORKS
+========================= */
+
+const canvas =
+document.getElementById(
+  "fireworks"
+);
+
+const ctx =
+canvas.getContext("2d");
+
+let particles=[];
+
+
+function resizeCanvas(){
+
+  canvas.width =
+    innerWidth;
+
+  canvas.height =
+    innerHeight;
+}
+
+resizeCanvas();
+
+addEventListener(
+  "resize",
+  resizeCanvas
+);
+
+
+/* =========================
+   FIREWORK SOUND
+========================= */
+
+let audioContext=null;
+
+
+function getAudio(){
+
+  if(
+    !audioContext
+  ){
+
+    audioContext =
+      new(
+        window.AudioContext ||
+        window.webkitAudioContext
+      )();
+  }
+
+  return audioContext;
+}
+
+
+function boom(){
+
+  const ac =
+    getAudio();
+
+
+  if(
+    ac.state==="suspended"
+  ){
+
+    ac.resume();
+  }
+
+
+  const osc =
+    ac.createOscillator();
+
+  const gain =
+    ac.createGain();
+
+
+  osc.type =
+    "sawtooth";
+
+
+  osc.frequency.setValueAtTime(
+    110,
+    ac.currentTime
+  );
+
+
+  osc.frequency.exponentialRampToValueAtTime(
+    40,
+    ac.currentTime+.45
+  );
+
+
+  gain.gain.setValueAtTime(
+    .0001,
+    ac.currentTime
+  );
+
+
+  gain.gain.exponentialRampToValueAtTime(
+    .5,
+    ac.currentTime+.03
+  );
+
+
+  gain.gain.exponentialRampToValueAtTime(
+    .0001,
+    ac.currentTime+.5
+  );
+
+
+  osc.connect(gain);
+
+  gain.connect(
+    ac.destination
+  );
+
+
+  osc.start();
+
+  osc.stop(
+    ac.currentTime+.55
+  );
+}
+
+
+/* =========================
+   ROCKET SOUND
+========================= */
+
+function rocketSound(){
+
+  const ac =
+    getAudio();
+
+
+  if(
+    ac.state==="suspended"
+  ){
+
+    ac.resume();
+  }
+
+
+  const osc =
+    ac.createOscillator();
+
+  const gain =
+    ac.createGain();
+
+
+  osc.type="sine";
+
+
+  osc.frequency.setValueAtTime(
+    150,
+    ac.currentTime
+  );
+
+
+  osc.frequency.exponentialRampToValueAtTime(
+    800,
+    ac.currentTime+.6
+  );
+
+
+  gain.gain.setValueAtTime(
+    .0001,
+    ac.currentTime
+  );
+
+
+  gain.gain.exponentialRampToValueAtTime(
+    .25,
+    ac.currentTime+.1
+  );
+
+
+  gain.gain.exponentialRampToValueAtTime(
+    .0001,
+    ac.currentTime+.65
+  );
+
+
+  osc.connect(gain);
+
+  gain.connect(
+    ac.destination
+  );
+
+
+  osc.start();
+
+  osc.stop(
+    ac.currentTime+.7
+  );
+}
+
+
+/* =========================
+   CREATE FIREWORK
+========================= */
+
+function createFirework(){
+
+  const x =
+    Math.random()*
+    canvas.width;
+
+
+  const y =
+    70+
+    Math.random()*
+    canvas.height*
+    .5;
+
+
+  const colors=[
+    "#ff2d95",
+    "#ffcf4a",
+    "#58e9ff",
+    "#b65cff",
+    "#ffffff",
+    "#ff5757"
+  ];
+
+
+  const color =
+    colors[
+      Math.floor(
+        Math.random()*
+        colors.length
+      )
+    ];
+
+
+  for(
+    let i=0;
+    i<120;
+    i++
+  ){
+
+    const angle =
+      Math.PI*2*i/120;
+
+
+    const speed =
+      2+
+      Math.random()*7;
+
+
+    particles.push({
+
+      x:x,
+      y:y,
+
+      vx:
+        Math.cos(angle)*
+        speed,
+
+      vy:
+        Math.sin(angle)*
+        speed,
+
+      gravity:.055,
+
+      friction:.985,
+
+      alpha:1,
+
+      color:color,
+
+      size:
+        1+
+        Math.random()*3
+
+    });
+  }
+
+
+  boom();
+}
+
+
+/* =========================
+   ANIMATE
+========================= */
+
+function animate(){
+
+  ctx.clearRect(
+    0,
+    0,
+    canvas.width,
+    canvas.height
+  );
+
+
+  particles.forEach(
+    (p,index)=>{
+
+      p.x += p.vx;
+
+      p.y += p.vy;
+
+      p.vy += p.gravity;
+
+      p.vx *= p.friction;
+
+      p.vy *= p.friction;
+
+      p.alpha -= .009;
+
+
+      ctx.save();
+
+
+      ctx.globalAlpha =
+        Math.max(
+          p.alpha,
+          0
+        );
+
+
+      ctx.fillStyle =
+        p.color;
+
+
+      ctx.shadowBlur=15;
+
+      ctx.shadowColor =
+        p.color;
+
+
+      ctx.beginPath();
+
+      ctx.arc(
+        p.x,
+        p.y,
+        p.size,
+        0,
+        Math.PI*2
+      );
+
+      ctx.fill();
+
+      ctx.restore();
+
+
+      if(
+        p.alpha<=0
+      ){
+
+        particles.splice(
+          index,
+          1
+        );
+      }
+
+    }
+  );
+
+
+  requestAnimationFrame(
+    animate
+  );
+}
+
+animate();
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function confetti(){
+
+  for(
+    let i=0;
+    i<150;
+    i++
+  ){
+
+    const piece =
+      document.createElement(
+        "div"
+      );
+
+
+    piece.style.position =
+      "fixed";
+
+    piece.style.width =
+      "8px";
+
+    piece.style.height =
+      "14px";
+
+    piece.style.left =
+      Math.random()*100+
+      "vw";
+
+    piece.style.top =
+      "-20px";
+
+    piece.style.background =
+      `hsl(
+        ${Math.random()*360},
+        100%,
+        65%
+      )`;
+
+    piece.style.zIndex =
+      "9999";
+
+    piece.style.borderRadius =
+      "2px";
+
+
+    document.body.appendChild(
+      piece
+    );
+
+
+    const duration =
+      2+
+      Math.random()*3;
+
+
+    setTimeout(
+      ()=>{
+
+        piece.style.transition =
+          `top ${duration}s linear,
+           transform ${duration}s linear,
+           opacity ${duration}s`;
+
+
+        piece.style.top =
+          "110vh";
+
+
+        piece.style.transform =
+          `rotate(
+            ${Math.random()*1000}deg
+          )`;
+
+
+        piece.style.opacity="0";
+
+      },
+      50
+    );
+
+
+    setTimeout(
+      ()=>piece.remove(),
+      5500
+    );
+  }
+}
+
+
+/* =========================
+   CELEBRATION
+========================= */
+
+function celebrate(){
+
+  const ac =
+    getAudio();
+
+
+  if(
+    ac.state==="suspended"
+  ){
+
+    ac.resume();
+  }
+
+
+  rocketSound();
+
+  confetti();
+
+
+  let count=0;
+
+
+  const show =
+    setInterval(
+      ()=>{
+
+        createFirework();
+
+        count++;
+
+
+        if(
+          count>=18
+        ){
+
+          clearInterval(show);
+        }
+
+      },
+      500
+    );
+}
+
+
+/* =========================
+   MAKE A WISH
+========================= */
+
+function makeWish(){
+
+  document
+  .querySelectorAll(
+    ".flame"
+  )
+  .forEach(
+    flame=>{
+
+      flame.classList.add(
+        "off"
+      );
+
+    }
+  );
+
+
+  celebrate();
+
+
+  setTimeout(
+    ()=>{
+
+      alert(
+        "🎂❤️ HAPPY BIRTHDAY SANGRAM ❤️🎂\n\n"+
+        "Your wish has been made!\n\n"+
+        "May every dream come true! ✨"
+      );
+
+    },
+    1000
+  );
+}
+
+</script>
+
+</body>
+</html>
